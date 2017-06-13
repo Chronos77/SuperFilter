@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Démo super filter</title>
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<script src="lib/SuperFilter.js"></script>
+</head>
+<body>
+  <ul id="colors">
+    <li>Red</li>
+    <li>Blue</li>
+    <li>Green</li>
+    <li>Orange</li>
+  </ul>
+
+  <div id="gender">
+    <p>Homme</p>
+    <p>Femme</p>
+  </div>
+
+	<ul id="SuperFilter">
+    <li class="Red"></li>
+    <li class="blue"></li>
+    <li class="green"></li>
+    <li class="orange"></li>
+    <li class="red blue"></li>
+    <li class="green orange homme"></li>
+    <li class="red green homme"></li>
+    <li class="blue orange"></li>
+  </ul>
+
+  <script>
+    $('#SuperFilter').SuperFilter({
+      filters: [
+        "#colors",
+        "#gender"
+      ]
+    })
+  </script>
+
+  <style>
+    .red {
+      background: red;
+    }
+    .green {
+      background: green;
+    }
+    .blue {
+      background: blue;
+    }
+    .orange {
+      background: orange;
+    }
+  </style>
+</body>
+</html>

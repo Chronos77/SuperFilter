@@ -1,0 +1,13 @@
+{
+  "name": "SuperFilter",
+  "authors": [
+    "Sylvain Santucci <sylvain.santucci@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
