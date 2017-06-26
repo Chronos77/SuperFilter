@@ -30,12 +30,15 @@
     <li class="blue orange me"></li>
   </ul>
 
+  <div id="SuperFilterTags"></div>
+
   <script>
     $('#SuperFilter').SuperFilter({
       filters: [
         "#colors",
         "#gender"
-      ]
+      ],
+      containerTag: "#SuperFilterTags"
     })
   </script>
 
